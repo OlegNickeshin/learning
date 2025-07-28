@@ -1,34 +1,50 @@
-# Simple Offline CLI Translator with History
+# 🧭 Simple Offline CLI Translator
 
-A lightweight Python-based English ↔ Russian sentence translator using a custom JSON dictionary.
+A minimal yet powerful Python-based command-line translator (English ↔ Russian) using a custom offline dictionary.
 
-## Features
-- Preserves punctuation and original case (e.g. **Hello** → **Привет**)
-- Works fully offline
-- Supports EN→RU, RU→EN, and auto-detection
-- Logs all translations with timestamps to `translation.log`
+No internet required. Just run and translate — punctuation and case preserved, logs saved.
 
-## Usage
+---
+
+## 🚀 Features
+
+- ✅ **Fully offline** — works with a local JSON dictionary
+- 🔠 **Case-sensitive** — keeps original casing (e.g. `Hello → Привет`)
+- 🧩 **Preserves punctuation**
+- 🔄 **Supports three modes**:
+  - English → Russian
+  - Russian → English
+  - Auto-detect direction
+- 🕓 **Logs** every translation with timestamp to `translation.log`
+
+---
+
+## 🧪 Usage
 
 ```bash
-python translator.py --text "Hello, world!" --dir 2ru
-python translator.py --text "Привет, мир!" --dir 2en
-python translator.py --text "Привет, мир!"           # auto mode
+python translator.py --text "Hello, world!" --dir 2ru     # English to Russian
+python translator.py --text "Привет, мир!" --dir 2en      # Russian to English
+python translator.py --text "Привет, мир!"                # Auto-detect
 ```
 
-Example
+Example log entry
 ```bash
-[2025-07-27 19:32] Hello, world! => Привет, мир!
+[2025-07-27 19:32] [2ru] Hello, world! => Привет, мир!
 ```
 
-✅ You can publish this if:
+📁 Files
 
-    dict.json contains ~10,000+ clean words
+    translator.py — main CLI script
+    dict.json — translation dictionary (10,000+ words recommended)
+    README.md — this file
+    requirements.txt — Python ≥ 3.6 (no external libraries)
 
-    The translator works from the command line
+✅ You should use or share this if:
 
-    You’re okay sharing it publicly (no sensitive data inside)
+    You want a lightweight offline translation tool
+    You care about full control over your dictionary
+    You need CLI-based, fast, local translation
 
-License
+🪪 License
 
-MIT or your preferred open license.
+MIT (or any license you prefer)
