@@ -18,7 +18,8 @@ python translator.py --text "Привет, мир!"           # auto mode
 
 Example
 ```bash
-[2025-07-27 19:32] Hello, world! => Привет, мир!```
+[2025-07-27 19:32] Hello, world! => Привет, мир!
+```
 
 ✅ You can publish this if:
 
