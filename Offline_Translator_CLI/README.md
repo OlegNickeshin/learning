@@ -13,11 +13,12 @@ A lightweight Python-based English ↔ Russian sentence translator using a custo
 ```bash
 python translator.py --text "Hello, world!" --dir 2ru
 python translator.py --text "Привет, мир!" --dir 2en
-python translator.py --text "Привет, мир!"           # auto mode```
+python translator.py --text "Привет, мир!"           # auto mode
+```
 
 Example
-
-[2025-07-27 19:32] Hello, world! => Привет, мир!
+```bash
+[2025-07-27 19:32] Hello, world! => Привет, мир!```
 
 ✅ You can publish this if:
 
