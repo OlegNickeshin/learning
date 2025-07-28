@@ -1,0 +1,2 @@
+# Offline Translator CLI — No dependencies
+python >= 3.6
